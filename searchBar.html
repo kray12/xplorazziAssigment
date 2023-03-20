@@ -21,7 +21,7 @@
         <h1>Search Data Table</h1>
         <div class="form-group row">
             <div class="col-2"> <label for="srch" id="search">Search</label></div>
-            <div class="col-10"><input type="text" class="form-control" onkeyup="myFunction()" id="srch" placeholder="Enter first name, last name or city."/></div>
+            <div class="col-10"><input type="text" class="form-control" onkeyup="srchFun()" id="srch" placeholder="Enter first name, last name or city."/></div>
         </div>
 
         <div>
@@ -60,33 +60,8 @@
     </div>
     
     <script>
-//    function myFunction() {
-//   var input = document.getElementById("srch");
-//   var text = input.value.toUpperCase();
-//  var  table = document.getElementById("table");
-//   var rows = document.getElementsByTagName("tr");
-//   for (let i = 0; i < row.length; i++) {
-//     var td = row[i].getElementsByTagName("td")[0];
-//     if (td) {
-//       var txtValue = td.textContent || td.innerText;
-//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//         row[i].style.display = "";
-//       } else {
-//         row[i].style.display = "none";
-//       }
-//     }       
-//   }
-// const filteredRows = rows.filter((row) => {
-//     const td = row.document.getElementsByTagName("td")[0];
-//     var txtValue = td.innerText;
-//     return txtValue.toUpperCase().indexOf(text) > -1;
-//   });
-//   rows.forEach(row => {
-//     row.style.display = filteredRows.includes(row) ? "" : "none";
-//   });
 
-// }
-function myFunction() {
+function srchFun() {
   var input = document.getElementById("srch");
   var text = input.value.toUpperCase();
   var table = document.getElementById("table");
